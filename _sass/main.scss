@@ -1,0 +1,10 @@
+@import 'variables';
+@import 'layouts';
+
+body,
+html {
+  background: $background;
+  color: black;
+  height: 100%;
+  position: relative;
+}

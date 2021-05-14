@@ -1,0 +1,23 @@
+---
+layout: home
+---
+<div class="container">
+ <div class='inner'>
+  <div class='content'>
+   <h1 class="current">Steven Woods</h1>
+
+   <ul class="date-list">
+    {% for post in site.posts limit: 10 %}
+    <li>
+     <div class='post-date'>
+      <time>{{ post.date | date: "%-d %b %Y" }}</time>
+     </div>
+     <div class="post-metadata">
+      <a class="current" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+     </div>
+    </li>
+    {% endfor %}
+   </ul>
+  </div>
+ </div>
+</div>
